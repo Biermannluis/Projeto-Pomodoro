@@ -1,0 +1,9 @@
+.button{
+    display: flex;
+    margin: 10vw 30vw ;
+    justify-content: space-between;  
+}
+.button_class{
+    font-family: var(--font-inglish);
+    font-size: 30px;
+}

@@ -1,0 +1,14 @@
+.timer {
+    display: flex;
+    background-image: var(--cor-timer);
+    justify-content: center;
+    font-size: 70px;
+    text-align: center;
+    margin: 1em 0;
+}
+
+
+#seg{
+
+    color: #000;
+}

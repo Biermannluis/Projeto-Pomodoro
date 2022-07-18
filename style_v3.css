@@ -1,0 +1,20 @@
+@import url('../pomodoro_v3/estilos/header_v3.css');
+@import url('../pomodoro_v3/estilos/timer_v3.css');
+@import url('../pomodoro_v3/estilos/button_v3.css');
+
+/*  CORES   */
+:root{
+--cor-timer: linear-gradient(#e4e1d9,#d8d1bbb7,#e4e1d9);
+--cor-fundo: #e4e1d9;
+--font-inglish:'IM Fell English', serif;
+--cor-botao:/* radial-gradient(white,#817323,white);*/ #0f610f;
+margin: 0;
+padding: 0;
+
+ 
+}
+body{
+    background-color: var(--cor-fundo);
+    font-family: 'IM Fell English', serif;
+
+}

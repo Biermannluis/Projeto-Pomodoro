@@ -1,0 +1,83 @@
+.header {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 14px;
+    margin: none;
+    width: 100%;
+}
+
+.header_item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 30%;
+    justify-content: right;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+input [type=checkbox] {
+    display: none;
+}
+label{
+        cursor: pointer;
+
+}
+.aba {
+    position: absolute;
+    width: 50vw;
+    height: 50pw;
+    background-color: whitesmoke;
+    top: 10vw;
+    font-family: var(--font-inglish);
+    border: solid black 1px;
+    display: none;
+
+}
+
+
+input[type=number] {
+    width: 120px;
+    height: 60px;
+    margin: 1em;
+    font-size: 14pt;
+    font-family:  var(--font-inglish);
+}
+
+input::placeholder {
+    font-family: var(--font-inglish);
+    font-size: 14pt;
+}
+
+
+#configuracoes:checked~.div_configuracoes {
+    display: block;
+    width: auto;
+}
+
+#configuracoes {
+    display: none;
+}
+
+#usuario:checked~.div_usuario {
+    display: block;
+    width: auto;
+}
+
+#usuario {
+    display: none;
+}
+.opçoes_preferencias{
+    margin-top: 5vw;
+    position: realtive;
+    display: flex ;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.opçoes_preferencias label{
+    margin: 0.5em 2em 0.5em 0;
+}

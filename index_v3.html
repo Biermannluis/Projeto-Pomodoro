@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
+    <link href="style_v3.css" rel="stylesheet">
+
+    <title>Pomodoro</title>
+</head>
+
+<body>
+    <header class="header">
+        <h2>Desenvolvido por: <br> Luis Biermann</h2>
+
+        <div class="header_item">
+
+            <!--ABA DE CONFIGURAÇOES-->
+            <input type="checkbox" id="configuracoes">
+            <label for="configuracoes">
+                Configuraçoes
+            </label>
+            <div class="aba div_configuracoes">
+                <section class="input">
+                    <input type="number" id="work_time" placeholder="Focus">
+                    <input type="number" id="chill_time" placeholder="Chill">
+                    <button onclick="set_time()">AJUSTAR TEMPO</button>
+                </section>
+            </div>
+
+            <!--ABA DE USUARIOS-->
+            <input type="checkbox" id="usuario">
+            <label for="usuario">
+                Usuario
+            </label>
+            <div class="aba div_usuario">
+                <section class="input">
+                    <input type="text" id="nome" placeholder="Nome">
+                    <input type="email" id="email" placeholder="E-mail">
+                    <input type="text" id="area_atuacao" placeholder="Area de Atuação">
+                    <div class="opçoes_preferencias">
+                        <input type="checkbox"id="surf">
+                        <label for="surf">Surf</label>
+                        <input type="checkbox" id="Violao">
+                        <label for="surf">Violao</label>
+                        <input type="checkbox" id="Futebol">
+                        <label for="surf">Futebol</label>
+                        <input type="checkbox" id="Desenhar">
+                        <label for="surf">Desenhar</label>
+                        <input type="checkbox" id="Anime">
+                        <label for="surf">Anime</label>
+                        <input type="checkbox" id="famosos">
+                        <label for="surf">Mundo dos famosos</label>
+                        <input type="checkbox" id="Tecnologia">
+                        <label for="surf">Tecnologia</label>
+                        <input type="checkbox" id="Moda">
+                        <label for="surf">Moda</label>
+                        <input type="checkbox" id="Receitas">
+                        <label for="surf">Receitas</label>
+                        <input type="checkbox" id="DIY">
+                        <label for="surf">DIY</label>
+                        <input type="checkbox" id="Automovel">
+                        <label for="surf">Automovel</label>
+                        <input type="checkbox" id="E-sport">
+                        <label for="surf">E-sport</label>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </header>
+    <hr />
+    <section class="timer">
+        <div id="div_hor">
+            00
+        </div>
+        <div>:</div>
+        <div id="div_min">
+            00
+        </div>
+        <div>:</div>
+        <div id="div_seg">
+            00
+        </div>
+    </section>
+    <section class="button">
+        <button class="button_class botao" onclick="start()" id="start">START</button>
+        <button class="button_class botao" onclick="stop()" id="stop">STOP</button>
+        <button class="button_class botao" onclick="pause()" id="pause">PAUSE</button>
+    </section>
+
+    <script src="cronometro_seg.js"></script>
+    <script src="cronometro_min.js"></script>
+    <script src="cronometro_hor.js"></script>
+    <script src="set_time.js"></script>
+    <script src="chill_cronometro_seg.js"></script>
+    <script src="chill_cronometro_min.js"></script>
+    <script src="chill_cronometro_hor.js"></script>
+    <script src="button_action.js"></script>
+
+
+
+
+
+</body>
+
+</html>
