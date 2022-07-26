@@ -2,7 +2,7 @@ var hor = 0
 var interval_hor;
 function start_hor() {
     clearInterval(interval_hor)
-    interval_hor = setInterval(cont_hor, 360)
+    interval_hor = setInterval(cont_hor, 36000)
 }
 function pause_hor() {
     clearInterval(interval_hor);

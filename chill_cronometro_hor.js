@@ -1,10 +1,10 @@
 var hor_chill = 0
 var interval_hor_chill;
 function start_hor_chill() {
-    console.log('inicia chill cronometro hor')
+    console.log('inicia chill hor')
 
     clearInterval(interval_hor_chill)
-    interval_hor_chill = setInterval(cont_hor_chill, 360)
+    interval_hor_chill = setInterval(cont_hor_chill, 36000)
 }
 function pause_hor_chill() {
     clearInterval(interval_hor_chill);
